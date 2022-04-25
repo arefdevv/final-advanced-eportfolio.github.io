@@ -706,9 +706,15 @@ shapes on third column
 }
 
 /* small phones, tablets, and large smart phones */
-@media (max-width: 768px) {
+@media (max-width: 992px) {
+    html, body{
+        overflow-x: hidden;
+    }
     .title {
         font-size: 80px;
+    }
+    .title--secondary{
+        font-size: 32px;
     }
     .header__para {
         font-size: 20px;
@@ -725,33 +731,26 @@ shapes on third column
     .modal__half {
         width: 100%;
     }
-}
 
-/*  just small phones */
+    .project__wrapper{
+        width: 350px;
+    }
 
-@media (max-width: 480px) {
-    .title {
-        font-size: 52px;
+    .project__description--title{
+        font-size: 24px;
     }
-    .header__para {
-        font-size: 18px;
+    .project__description--sub-title{
+        font-size: 16px;
     }
-    .nav__link:first-child {
+
+    .project__description--para{
         display: none;
     }
-    .project__description--para {
-        display: none;
+    p{
+        line-height: 1.5;
     }
-    .project__description {
-        left: 0;
-        padding: 0;
-        width: 100%;
-        text-align: center;
-    }
-    .project__description--sub-title {
-        margin-bottom: 8px;
-    }
-    .modal__half {
-        padding: 40px;
+    nav{
+        display: block;
     }
 }
+
